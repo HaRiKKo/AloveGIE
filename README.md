@@ -1,2 +1,4 @@
 # AloveGIE
-AloveGIE's Repository 
+Project AloveGIE's Repository 
+
+Language : PHP, HTML, JS, CSS, SQL;
