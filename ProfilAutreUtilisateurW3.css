@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the body */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.carreau{
+	width:13px; 
+	height:13px; 
+	margin-left:30%;
+	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* En tete, logo et titre */
+.headerPAU {
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  background-image : url("logo3.jpg");
+  background-color : #FFE6E6;
+  background-repeat : no-repeat;
+  background-attachment : fixed;
+  background-position : left top;
+  background-size : 8.5%; 
+}
+
+.headerPAU h1 {
+  font-size: 45px;
+}
+
+#LovePAU{
+	color: #E6362E;
+}
+
+#logoPAU{
+	top: 30%;
+	left:50%;	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Style barre de navigation */
+.navbarPAU {
+  overflow: hidden;
+  background-color: #FFA8A8;
+}
+
+.navbarPAU a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: solid 1px #E6362E;
+}
+
+.navbarPAU a.right {
+  float: right;
+}
+
+#BoutonRemarkPAU{
+	background-color: #E6362E;
+}
+
+.navbarPAU a:hover {
+  //background-color: #ddd;
+  background-color: #FFA8A8;
+  color: black;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* zone de l'autre profil */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.chipPAU {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  color: #E6362E;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chipPAU img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.columnPAU {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card2PAU {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #f1f1f1;
+}
+
+.about-sectionPAU {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.containerPAU {
+  padding: 0 16px;
+}
+
+
+#PseudonymePAU{
+	font-size: 21px;
+	color : #E6362E
+}
+
+.CadrePAU{
+	width: 500px; 
+	height : 60px;
+	text-align: center;
+	border : solid 1px #333;
+	background-color : #FFE6E6;
+}	
+
+.titlePAU {
+  color: #333;
+}
+
+.buttonPAU {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonPAU:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .columnPAU {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Mise en page générale */
+/* Sidebar/left column */
+.sidePAU {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.mainPAU {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Pieds de page */
+.footerPAU {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #E6362E;
+   color: white;
+   text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .rowPAU {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbarPAU a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#BoutonConnexion{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: solid 1px #E6362E;
+  background-color: #FFA8A8;
+  font-size: 16px;
+}

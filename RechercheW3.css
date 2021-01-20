@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the body */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* En tete, logo et titre */
+.header {
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  background-image : url("logo3.jpg");
+  background-color : #FFE6E6;
+  background-repeat : no-repeat;
+  background-attachment : fixed;
+  background-position : left top;
+  background-size : 8.5%; 
+}
+
+
+.header h1 {
+  font-size: 45px;
+}
+
+#Love{
+	color: #E6362E;
+}
+
+#logo{
+	top: 30%;
+	left:50%;	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Style barre de navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #FFA8A8;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: solid 1px #E6362E;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+#BoutonRemark{
+	background-color: #E6362E;
+}
+
+
+.navbar a:hover {
+  //background-color: #ddd;
+  background-color: #FFA8A8;
+  color: black;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* zone des filtres de recherche */
+#BoutonFiltreR{
+	font-size: 23px;
+	color: #E6362E;
+}
+
+#TitreFiltresR{
+	font-size: 20px;
+	color: #333;
+}
+
+#Valider{
+	color: #E6362E;
+	background-color: #D8DDE3;
+	font-size: 18px;
+}
+
+#NivActu{
+	border: 1px solid #E6362E;
+	background-color: #FFE6E6;
+	color: #E6362E;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* zone profils autres utilisateurs */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+
+.title {
+  color: #333;
+}
+
+.PseudonymesAutresUtilisateursR{
+		text-align: center;
+		color : #E6362E;
+		backgroud-color : #f1f1f1;
+		font-size:20px;
+	}
+
+.carreau{
+	width:13px; 
+	height:13px; 
+	margin-left:30%;
+	
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Mise en page générale */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #E6362E;
+   color: white;
+   text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
